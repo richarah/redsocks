@@ -12,7 +12,7 @@ ENV DOCKER_NET docker0
 RUN apt-get update && apt-get install -y redsocks iptables
 
 # Copy configuration files...
-COPY redsocks.tmpl /etc/redsocks.conf
+COPY redsocks.tmpl /etc/redsocks.tmpl
 COPY whitelist.txt /etc/redsocks-whitelist.txt
 COPY redsocks.sh /usr/local/bin/redsocks.sh
 COPY redsocks-fw.sh /usr/local/bin/redsocks-fw.sh

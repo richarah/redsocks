@@ -19,4 +19,4 @@ COPY redsocks-fw.sh /usr/local/bin/redsocks-fw.sh
 
 RUN chmod +x /usr/local/bin/*
 
-ENTRYPOINT ["/usr/local/bin/redsocks.sh -c /etc/redsocks.conf"]
+ENTRYPOINT ["/usr/local/bin/redsocks.sh"]
